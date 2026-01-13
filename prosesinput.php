@@ -4,11 +4,11 @@ include 'config.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $bulan = $_POST['bulan'];
-    $target = $_POST['target'];
+    $target = $_POST['targetbulanan'];
     $todo = $_POST['to do'];
 
     // insert data ke database
-    $sql = "INSERT INTO tbjadwal (bulan, target, to do) VALUES ('$bulan', '$target','$todo')";
+    $sql = "INSERT INTO tbjadwal (bulan, targetbulanan, todo) VALUES ('$bulan', '$target','$todo')";
     $result = mysqli_query($koneksi, $sql);
 
     // Tutup koneksi

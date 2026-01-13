@@ -32,16 +32,16 @@
                 <thead>
                     <tr>
                         <th>bulan</th>
-                        <th>target</th>
-                        <th>to do</th>
+                        <th>targetbulanan</th>
+                        <th>todo</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php while ($row = mysqli_fetch_assoc($result)): ?>
                     <tr>
                         <td><?= htmlspecialchars($row['bulan']); ?></td>
-                        <td><?= htmlspecialchars($row['target']); ?></td>
-                        <td><?= htmlspecialchars($row['to do']); ?></td>
+                        <td><?= htmlspecialchars($row['targetbulanan']); ?></td>
+                        <td><?= htmlspecialchars($row['todo']); ?></td>
                         <!-- tombol hapus data tanpa konfirmasi -->
                         <td>
                             <a href="hapus.php?id=<?= urlencode($row['id']); ?>">Hapus</a>

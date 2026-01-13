@@ -15,10 +15,10 @@
     <form action="prosesinput.php" method="post">
         <label>bulan</label>
         <input type="text" name="bulan">
-        <label>target</label>
-        <input type="text" name="target">
-        <label>to do</label>
-        <input type="text" name="to do">
+        <label>targetbulanan</label>
+        <input type="text" name="targetbulanan">
+        <label>todo</label>
+        <input type="text" name="todo">
         <input type="submit" value="kirim">
     </form>
 </body>
