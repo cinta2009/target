@@ -41,11 +41,11 @@
             <label>bulan</label>
             <input type="text" name="bulan" value="<?= htmlspecialchars($siswa['bulan']); ?>" required>
 
-            <label>target</label>
-            <input type="text" name="target" value="<?= htmlspecialchars($siswa['target']); ?>" required>
+            <label>targetbulanan</label>
+            <input type="text" name="targetbulanan" value="<?= htmlspecialchars($siswa['targetbulan']); ?>" required>
 
-            <label>to do</label>
-            <input type="text" name="to do" value="<?= htmlspecialchars($siswa['to do']); ?>" required>
+            <label>todo</label>
+            <input type="text" name="todo" value="<?= htmlspecialchars($siswa['todo']); ?>" required>
 
             <input type="submit" name="update" value="Update">
         </form>
