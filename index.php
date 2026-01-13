@@ -13,16 +13,13 @@
     ?>
 
     <form action="prosesinput.php" method="post">
-        <label>nama</label>
-        <input type="text" name="nama">
-        <label>kelas</label>
-        <input type="text" name="kelas">
+        <label>bulan</label>
+        <input type="text" name="bulan">
+        <label>target</label>
+        <input type="text" name="target">
         <label>umur</label>
         <input type="text" name="umur">
         <label>jenisKelamin</label>
-        <input type="text" name="jenisKelamin">
-        <label>alamat</label>
-        <input type="text" name="alamat">
         <input type="submit" value="kirim">
 
     </form>
