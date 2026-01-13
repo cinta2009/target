@@ -17,9 +17,8 @@
         <input type="text" name="bulan">
         <label>target</label>
         <input type="text" name="target">
-        <label>umur</label>
-        <input type="text" name="umur">
-        <label>jenisKelamin</label>
+        <label>to do</label>
+        <input type="text" name="to do">
         <input type="submit" value="kirim">
 
     </form>
