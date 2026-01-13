@@ -23,10 +23,10 @@
     if (isset($_POST['update'])) {
         $bulan = $_POST['bulan'];
         $target = $_POST['target'];
-        $todo = $_POST['to do'];
+        $to_do = $_POST['to_do'];
 
         mysqli_query($koneksi, "UPDATE tbjadwal 
-        SET bulan='$bulan', target='$target',to do='$todo' 
+        SET bulan='$bulan', target='$target',to_do='$to_do' 
         WHERE id='$id'");
 
         header("Location: view-data.php");
@@ -41,11 +41,11 @@
             <label>bulan</label>
             <input type="text" name="bulan" value="<?= htmlspecialchars($siswa['bulan']); ?>" required>
 
-            <label>targetbulanan</label>
-            <input type="text" name="targetbulanan" value="<?= htmlspecialchars($siswa['targetbulan']); ?>" required>
+            <label>target</label>
+            <input type="text" name="target" value="<?= htmlspecialchars($siswa['target']); ?>" required>
 
-            <label>todo</label>
-            <input type="text" name="todo" value="<?= htmlspecialchars($siswa['todo']); ?>" required>
+            <label>to_do</label>
+            <input type="text" name="to_do" value="<?= htmlspecialchars($siswa['to_do']); ?>" required>
 
             <input type="submit" name="update" value="Update">
         </form>
