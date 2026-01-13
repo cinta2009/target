@@ -17,7 +17,7 @@
 
     <?php
     // query untuk mendapatkan data dari database
-    $sql = "SELECT * FROM tbsiswa";
+    $sql = "SELECT * FROM tbjadwal";
     $result = mysqli_query($koneksi, $sql);
     ?>
     <div class="container">
@@ -31,22 +31,17 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Nama</th>
-                        <th>Kelas</th>
-                        <th>Umur</th>
-                        <th>jenisKelamin</th>
-                        <th>Alamat</th>
-                        <th>Aksi</th>
+                        <th>bulan</th>
+                        <th>target</th>
+                        <th>to do</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php while ($row = mysqli_fetch_assoc($result)): ?>
                     <tr>
-                        <td><?= htmlspecialchars($row['nama']); ?></td>
-                        <td><?= htmlspecialchars($row['kelas']); ?></td>
-                        <td><?= htmlspecialchars($row['umur']); ?></td>
-                        <td><?= htmlspecialchars($row['jenisKelamin']); ?></td>
-                        <td><?= htmlspecialchars($row['alamat']); ?></td>
+                        <td><?= htmlspecialchars($row['bulan']); ?></td>
+                        <td><?= htmlspecialchars($row['target']); ?></td>
+                        <td><?= htmlspecialchars($row['to do']); ?></td>
                         <!-- tombol hapus data tanpa konfirmasi -->
                         <td>
                             <a href="hapus.php?id=<?= urlencode($row['id']); ?>">Hapus</a>
