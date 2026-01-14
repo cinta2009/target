@@ -19,7 +19,7 @@
     form {
         background: white;
         padding: 20px;
-        border-radius: 8px;
+        border-radius: 30px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         max-width: 500px;
     }
@@ -38,7 +38,6 @@
         border: 1px solid #ccc;
         border-radius: 4px;
         box-sizing: border-box;
-        /* Agar input tidak melewati batas kotak */
     }
 
     input[type="submit"] {
