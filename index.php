@@ -35,7 +35,7 @@
 
     input[type="text"] {
         width: 100%;
-        padding: 8px;
+        padding: 15px;
         margin-top: 5px;
         border: 1px solid #ccc;
         border-radius: 4px;
