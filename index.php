@@ -14,7 +14,8 @@
         align-items: center;
         height: 85vh;
         display: flex;
-        background: linear-gradient(135deg, #74ebd5, #9face6, #fbc2eb);
+        background: linear-gradient(to bottom, #ff9999, #99ff99, #9999ff);
+        min-height: 100vh
     }
 
     form {
