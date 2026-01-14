@@ -14,6 +14,7 @@
         align-items: center;
         height: 85vh;
         display: flex;
+        background: linear-gradient(135deg, #74ebd5, #9face6, #fbc2eb);
     }
 
     form {
