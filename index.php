@@ -11,9 +11,7 @@
         padding: 20px;
         background-color: #f4f4f4;
         justify-content: center;
-        /* Tengah secara horizontal */
         align-items: center;
-        /* Tengah secara vertikal */
         height: 100vh;
     }
 
