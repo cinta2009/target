@@ -12,7 +12,7 @@
         background-color: #f4f4f4;
         justify-content: center;
         align-items: center;
-        height: 50vh;
+        height: 85vh;
         display: flex;
     }
 
