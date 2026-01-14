@@ -12,7 +12,8 @@
         background-color: #f4f4f4;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 50vh;
+        display: flex;
     }
 
     form {
