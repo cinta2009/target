@@ -65,8 +65,8 @@
     <form action="prosesinput.php" method="post">
         <label>bulan</label>
         <input type="text" name="bulan">
-        <label>targetbulanan</label>
-        <input type="text" name="targetbulanan">
+        <label>target</label>
+        <input type="text" name="target">
         <label>to_do</label>
         <input type="text" name="to_do">
         <input type="submit" value="kirim">
