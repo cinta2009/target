@@ -5,99 +5,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
     <style>
     /* style.css */
 
-    /* Pengaturan halaman agar rapi di tengah */
     body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f9;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background-color: #f0f2f5;
         margin: 0;
-        padding: 40px;
+        padding: 40px 20px;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 
-    /* Memperbaiki tampilan kontainer */
+    /* Kotak container putih bersih (tanpa garis luar hitam) */
     .container {
-        background: #ffffff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        margin-bottom: 20px;
         width: 100%;
-        max-width: 800px;
+        max-width: 850px;
+        background: white;
+        box-sizing: border-box;
+        padding: 20px;
     }
 
-    /* Gaya untuk tombol 'Kembali' */
+    /* Lengkungan untuk bagian atas dan bawah agar rapi */
+    .container:first-of-type {
+        border-radius: 12px 12px 0 0;
+        text-align: center;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .container:last-of-type {
+        border-radius: 0 0 12px 12px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Tombol Kembali */
     button {
         background-color: #007bff;
         color: white;
         border: none;
-        padding: 10px 20px;
-        border-radius: 4px;
+        padding: 10px 25px;
+        border-radius: 6px;
         cursor: pointer;
         font-weight: bold;
-        transition: background 0.3s;
     }
 
-    button:hover {
-        background-color: #0056b3;
-    }
-
-    /* Mempercantik Tabel */
+    /* TABEL DENGAN GARIS HITAM FULL */
     table {
         width: 100%;
         border-collapse: collapse;
-        margin-top: 15px;
-        background-color: #fff;
+        /* Biar garis tidak renggang */
+        margin: 10px 0;
+        border: 1px solid #000;
+        /* Garis hitam luar tabel */
     }
 
-    table th,
-    table td {
-        border: 1px solid #ddd;
-        padding: 12px 15px;
-        text-align: left;
-    }
-
-    /* Header Tabel */
-    table thead th {
+    /* Header Tabel: SEMUA kolom jadi hitam (termasuk kolom aksi) */
+    table th {
         background-color: #333;
         color: white;
+        padding: 12px;
+        text-align: center;
+        border: 1px solid #000;
+        /* Garis hitam antar sel header */
         text-transform: uppercase;
-        font-size: 14px;
+        font-size: 13px;
     }
 
-    /* Efek baris selang-seling */
-    table tbody tr:nth-child(even) {
-        background-color: #f9f9f9;
+    /* Sel Isi Tabel */
+    table td {
+        padding: 12px;
+        color: #000;
+        border: 1px solid #000;
+        /* Garis hitam di setiap sisi sel data */
+        vertical-align: middle;
     }
 
-    /* Efek saat baris disorot (hover) */
-    table tbody tr:hover {
-        background-color: #f1f1f1;
+    /* Mengatur kolom aksi agar teks di tengah */
+    table td:last-child {
+        text-align: center;
     }
 
-    /* Gaya untuk link Hapus dan Edit */
+    /* LINK EDIT & HAPUS (Tanpa garis bawah tulisan) */
     table td a {
         text-decoration: none;
-        margin-right: 10px;
         font-weight: bold;
+        margin: 0 8px;
+        display: inline-block;
     }
 
     table td a[href*="hapus"] {
-        color: #d9534f;
-        /* Warna merah untuk hapus */
+        color: #ff0000;
+        /* Merah */
     }
 
     table td a[href*="update"] {
-        color: #f0ad4e;
-        /* Warna oranye untuk edit */
+        color: #ffaa00;
+        /* Kuning/Oranye */
     }
 
     table td a:hover {
-        text-decoration: underline;
+        opacity: 0.7;
     }
     </style>
 </head>
