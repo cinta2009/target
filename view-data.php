@@ -23,7 +23,7 @@
     .container {
         width: 100%;
         max-width: 850px;
-        background: #ff0000;
+        background: #d68b8b;
         box-sizing: border-box;
         padding: 20px;
     }
