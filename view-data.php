@@ -11,7 +11,7 @@
 
     body {
         font-family: 'Segoe UI', Arial, sans-serif;
-        background-color: #f0f2f5;
+        background-color: #7999c9;
         margin: 0;
         padding: 40px 20px;
         display: flex;
