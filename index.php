@@ -9,7 +9,7 @@
     body {
         font-family: sans-serif;
         padding: 20px;
-        background-color: #f4f4f4;
+        background-color: #8d3443;
         justify-content: center;
         align-items: center;
         height: 85vh;
@@ -19,7 +19,7 @@
     }
 
     form {
-        background: white;
+        background: #f0b1b1;
         padding: 20px;
         border-radius: 30px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -37,7 +37,7 @@
         width: 100%;
         padding: 15px;
         margin-top: 5px;
-        border: 1px solid #ccc;
+        border: 1px solid #db98ae;
         border-radius: 4px;
         box-sizing: border-box;
     }
@@ -45,7 +45,7 @@
     input[type="submit"] {
         margin-top: 15px;
         padding: 10px 20px;
-        background-color: #28a745;
+        background-color: #be453c;
         color: white;
         border: none;
         border-radius: 4px;
@@ -53,7 +53,7 @@
     }
 
     input[type="submit"]:hover {
-        background-color: #218838;
+        background-color: #887521;
     }
     </style>
 </head>
