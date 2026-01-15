@@ -14,7 +14,7 @@
         align-items: center;
         height: 85vh;
         display: flex;
-        background: linear-gradient(to bottom, #ff9999, #99ff99, #9999ff);
+        background: linear-gradient(to bottom, #ff9999, #82b7cf, #af5d9d);
         min-height: 100vh
     }
 
