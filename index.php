@@ -62,9 +62,6 @@
     <?php
     include 'config.php'
     ?>
-    <h1>
-        <center>JADWAL BULANAN</center>
-    </h1>
 
     <form action="prosesinput.php" method="post">
         <label>bulan</label>
