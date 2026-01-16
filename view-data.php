@@ -7,8 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <style>
-    /* style.css */
-
     body {
         font-family: 'Segoe UI', Arial, sans-serif;
         background-color: #7999c9;
@@ -22,7 +20,7 @@
     .container {
         width: 100%;
         max-width: 850px;
-        background: #d68b8b;
+        background: #ddc7c7;
         box-sizing: border-box;
         padding: 20px;
     }
