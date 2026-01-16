@@ -155,9 +155,11 @@
 
 
         <?php else: ?>
-
-        <p>Data tidak ditemukan</p>
-
+        <p>
+            <center>
+                Data tidak ditemukan
+            </center>
+        </p>
         <?php endif; ?>
 
 </body>
