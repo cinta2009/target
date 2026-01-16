@@ -63,7 +63,7 @@
     table th {
         background-color: #333;
         color: white;
-        padding: 12px;
+        padding: 10px;
         text-align: center;
         border: 1px solid #000;
         /* Garis hitam antar sel header */
