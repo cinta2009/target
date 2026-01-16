@@ -53,10 +53,8 @@
     table {
         width: 100%;
         border-collapse: collapse;
-        /* Biar garis tidak renggang */
         margin: 10px 0;
         border: 1px solid #000;
-        /* Garis hitam luar tabel */
     }
 
     /* Header Tabel: SEMUA kolom jadi hitam (termasuk kolom aksi) */
@@ -66,7 +64,6 @@
         padding: 10px;
         text-align: center;
         border: 1px solid #000;
-        /* Garis hitam antar sel header */
         text-transform: uppercase;
         font-size: 13px;
     }
@@ -94,12 +91,10 @@
 
     table td a[href*="hapus"] {
         color: #ff0000;
-        /* Merah */
     }
 
     table td a[href*="update"] {
         color: #ffaa00;
-        /* Kuning/Oranye */
     }
 
     table td a:hover {
