@@ -19,7 +19,6 @@
         align-items: center;
     }
 
-    /* Kotak container putih bersih (tanpa garis luar hitam) */
     .container {
         width: 100%;
         max-width: 850px;
@@ -28,7 +27,6 @@
         padding: 20px;
     }
 
-    /* Lengkungan untuk bagian atas dan bawah agar rapi */
     .container:first-of-type {
         border-radius: 12px 12px 0 0;
         text-align: center;
