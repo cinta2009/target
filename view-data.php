@@ -116,12 +116,10 @@
     <!-- tampilkan data dari database -->
 
     <?php
-    // query untuk mendapatkan data dari database
     $sql = "SELECT * FROM tbjadwal";
     $result = mysqli_query($koneksi, $sql);
     ?>
     <div class="container">
-        <!-- tombol kembali ke halaman input data -->
         <a href="index.php"><button> Kembali</button></a>
     </div>
     <?php
@@ -142,7 +140,6 @@
                         <td><?= htmlspecialchars($row['bulan']); ?></td>
                         <td><?= htmlspecialchars($row['target']); ?></td>
                         <td><?= htmlspecialchars($row['to_do']); ?></td>
-                        <!-- tombol hapus data tanpa konfirmasi -->
                         <td>
                             <a href="hapus.php?id=<?= urlencode($row['id']); ?>">Hapus</a>
                             <a href="update.php?id=<?= urlencode($row['id']); ?>">Edit</a>
