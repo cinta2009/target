@@ -41,7 +41,7 @@
         background-color: #007bff;
         color: white;
         border: none;
-        padding: 10px 25px;
+        padding: 15px 25px;
         border-radius: 6px;
         cursor: pointer;
         font-weight: bold;
