@@ -76,7 +76,6 @@
         padding: 12px;
         color: #000;
         border: 1px solid #000;
-        /* Garis hitam di setiap sisi sel data */
         vertical-align: middle;
     }
 
