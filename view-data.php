@@ -51,7 +51,7 @@
     table {
         width: 100%;
         border-collapse: collapse;
-        margin: 10px 0;
+        margin: 15px 0;
         border: 1px solid #000;
     }
 
