@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>view data</title>
+    <title>view data jadwal</title>
     <link rel="stylesheet" href="style.css">
     <style>
     body {
@@ -150,7 +150,7 @@
         <?php else: ?>
         <p>
             <center>
-                Data tidak ditemukan
+                Data tidak ditemukan disini
             </center>
         </p>
         <?php endif; ?>
