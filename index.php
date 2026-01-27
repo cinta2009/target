@@ -6,55 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jadwalbulanan</title>
     <style>
-    body {
-        font-family: sans-serif;
-        padding: 20px;
-        background-color: #8d3443;
-        justify-content: center;
-        align-items: center;
-        height: 85vh;
-        display: flex;
-        background: linear-gradient(to bottom, #ff9999, #82b7cf, #af5d9d);
-        min-height: 100vh
-    }
+    /* Base Style */
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #ff9999, #82b7cf, #af5d9d);
+}
 
-    form {
-        background: #f0b1b1;
-        padding: 20px;
-        border-radius: 30px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        max-width: 500px;
-    }
+/* Form Container */
+form {
+    background: #f0b1b1;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
 
-    label {
-        display: block;
-        margin-top: 10px;
-        font-weight: bold;
-        text-transform: capitalize;
-    }
+/* Typography & Inputs */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
 
-    input[type="text"] {
-        width: 100%;
-        padding: 15px;
-        margin-top: 5px;
-        border: 1px solid #db98ae;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #db98ae;
+    box-sizing: border-box;
+}
 
-    input[type="submit"] {
-        margin-top: 15px;
-        padding: 10px 20px;
-        background-color: #be453c;
-        color: white;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
+/* Button Specific */
+input[type="submit"] {
+    margin-top: 15px;
+    background: #be453c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
 
-    input[type="submit"]:hover {
-        background-color: #887521;
-    }
+input[type="submit"]:hover {
+    background: #887521;
+}
     </style>
 </head>
 
