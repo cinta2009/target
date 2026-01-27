@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <style>
     body {
-        font-family: 'Segoe UI', Arial, sans-serif;
+        font-family: 'Segoe UI', sans-serif;
         background-color: #7999c9;
         margin: 0;
         padding: 40px 20px;
@@ -20,82 +20,67 @@
     .container {
         width: 100%;
         max-width: 850px;
-        background: #ddc7c7;
-        box-sizing: border-box;
+        background: #ebb9b9;
         padding: 20px;
+        box-sizing: border-box;
+        border-radius: 12px;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        margin-bottom: 10px;
     }
 
-    .container:first-of-type {
-        border-radius: 12px 12px 0 0;
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+        background: #fff;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid #000;
+    }
+
+    th,
+    td {
+        padding: 12px;
         text-align: center;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     }
 
-    .container:last-of-type {
-        border-radius: 0 0 12px 12px;
-        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+    th {
+        background: #333333;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 13px;
     }
 
-    /* Tombol Kembali */
+    /* Tombol & Link */
     button {
-        background-color: #007bff;
-        color: white;
+        background: #f06c7d;
+        color: #fff;
         border: none;
-        padding: 15px 25px;
+        padding: 10px 20px;
         border-radius: 6px;
         cursor: pointer;
         font-weight: bold;
     }
 
-    /* TABEL DENGAN GARIS HITAM FULL */
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 15px 0;
-        border: 1px solid #000;
-    }
-
-    /* Header Tabel: SEMUA kolom jadi hitam (termasuk kolom aksi) */
-    table th {
-        background-color: #333;
-        color: white;
-        padding: 10px;
-        text-align: center;
-        border: 1px solid #000;
-        text-transform: uppercase;
-        font-size: 13px;
-    }
-
-    /* Sel Isi Tabel */
-    table td {
-        padding: 12px;
-        color: #000;
-        border: 1px solid #000;
-        vertical-align: middle;
-    }
-
-    /* Mengatur kolom aksi agar teks di tengah */
-    table td:last-child {
-        text-align: center;
-    }
-
-    /* LINK EDIT & HAPUS (Tanpa garis bawah tulisan) */
-    table td a {
+    a {
         text-decoration: none;
         font-weight: bold;
-        margin: 0 8px;
-        display: inline-block;
     }
 
-    table td a[href*="hapus"] {
+    /* Tombol Aksi di dalam Tabel */
+    [href*="update"] {
+        color: #ffaa00;
+        margin-left: 10px;
+    }
+
+    [href*="hapus"] {
         color: #ff0000;
     }
 
-    table td a[href*="update"] {
-        color: #ffaa00;
-    }
-
-    table td a:hover {
+    a:hover {
         opacity: 0.7;
     }
     </style>
