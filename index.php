@@ -14,14 +14,14 @@
         align-items: center;
         min-height: 100vh;
         margin: 0;
-        background: linear-gradient(to bottom, #ff9999, #82b7cf, #af5d9d);
+        background: #faf7f7;
     }
 
     /* Form Container */
     form {
-        background: #f0b1b1;
+        background: #b8acac;
         padding: 20px;
-        border-radius: 30px;
+        border-radius: 0px;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         width: 100%;
         max-width: 500px;
@@ -39,7 +39,7 @@
         width: 100%;
         padding: 12px;
         border-radius: 4px;
-        border: 1px solid #db98ae;
+        /* border: 1px solid #db98ae; */
         box-sizing: border-box;
     }
 
