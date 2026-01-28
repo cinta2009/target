@@ -110,7 +110,8 @@
                         <th>bulan</th>
                         <th>target</th>
                         <th>to_do</th>
-                    </tr>
+                        <th>action</th>
+                        < </tr>
                 </thead>
                 <tbody>
                     <?php while ($row = mysqli_fetch_assoc($result)): ?>
