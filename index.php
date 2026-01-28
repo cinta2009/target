@@ -39,7 +39,7 @@
         width: 100%;
         padding: 12px;
         border-radius: 4px;
-        /* border: 1px solid #db98ae; */
+        /* border: 1px solid #f791b3; */
         box-sizing: border-box;
     }
 
