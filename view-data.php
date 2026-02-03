@@ -73,7 +73,7 @@
     }
 
     button {
-        background-color: #6c757d;
+        background-color: #6487a5;
         color: white;
         border: none;
         padding: 10px 25px;
@@ -84,7 +84,7 @@
     }
 
     button:hover {
-        background-color: #5a6268;
+        background-color: #17629b;
     }
 
     a {
