@@ -82,7 +82,7 @@
     ?>
 
     <form action="prosesinput.php" method="post">
-        <h3>Input Jadwal Bulanan</h3>
+        <h3>Jadwal Bulanan</h3>
 
         <label>bulan</label>
         <input type="text" name="bulan" required oninvalid="this.setCustomValidity('Kolom bulan tidak boleh kosong!')"
