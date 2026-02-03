@@ -13,19 +13,46 @@
         color: #333;
     }
 
+    /* Kita buat container utama menjadi flexbox */
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .container {
+        width: 100%;
         max-width: 1000px;
-        margin: 0 auto;
         background: #fff;
         padding: 20px;
         border-radius: 8px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+
+        /* Trick CSS: Mengatur urutan tampilan tanpa ubah HTML */
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Container pertama (yang isi tombol kembali) dipaksa pindah ke bawah */
+    .container:has(button) {
+        order: 2;
+        /* Angka lebih tinggi akan pindah ke bawah */
+        background: none;
+        box-shadow: none;
+        align-items: center;
+        /* Membuat tombol ke tengah */
+    }
+
+    /* Container kedua (yang isi tabel) tetap di atas */
+    .container:has(table) {
+        order: 1;
     }
 
     table {
         width: 100%;
         border-collapse: collapse;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     th {
@@ -49,10 +76,11 @@
         background-color: #6c757d;
         color: white;
         border: none;
-        padding: 8px 15px;
-        border-radius: 4px;
+        padding: 10px 25px;
+        border-radius: 20px;
         cursor: pointer;
         transition: 0.3s;
+        font-weight: bold;
     }
 
     button:hover {
@@ -64,15 +92,6 @@
         color: #007bff;
         font-weight: bold;
         margin-right: 10px;
-    }
-
-    a:hover {
-        color: #0056b3;
-    }
-
-    .action-cell {
-        display: flex;
-        gap: 10px;
     }
     </style>
 </head>
@@ -86,9 +105,11 @@
     $sql = "SELECT * FROM tbjadwal";
     $result = mysqli_query($koneksi, $sql);
     ?>
+
     <div class="container">
-        <a href="index.php"><button> Kembali</button></a>
+        <a href="index.php"><button>Kembali</button></a>
     </div>
+
     <?php
     if (mysqli_num_rows($result) > 0): ?>
     <div class="container">
@@ -117,14 +138,15 @@
                 </tbody>
             </table>
         </div>
+    </div>
 
-        <?php else: ?>
-        <p>
-            <center>
-                Data tidak ditemukan disini
-            </center>
-        </p>
-        <?php endif; ?>
+    <?php else: ?>
+    <p>
+        <center>
+            Data tidak ditemukan disini
+        </center>
+    </p>
+    <?php endif; ?>
 
 </body>
 
