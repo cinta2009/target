@@ -23,7 +23,6 @@
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
         width: 100%;
         max-width: 400px;
-        /* Flexbox untuk menyusun isi container ke tengah */
         display: flex;
         flex-direction: column;
     }
