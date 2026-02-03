@@ -87,7 +87,7 @@
     }
 
     button {
-        background-color: #95a5a6;
+        background-color: #5dadb3;
         color: white;
         padding: 10px 30px;
         border: none;
@@ -99,7 +99,7 @@
     }
 
     button:hover {
-        background-color: #7f8c8d;
+        background-color: #1458b1;
     }
 
     br {
