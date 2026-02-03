@@ -105,7 +105,6 @@
 
     br {
         display: none;
-        /* Menghilangkan br bawaan agar spacing diatur CSS */
     }
     </style>
 </head>
